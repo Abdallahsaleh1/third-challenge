@@ -70,7 +70,10 @@ export class EventsComponent implements OnInit {
     this.show = true;
     setInterval(() => {
       this.counter = this.counter +1; 
-      document.getElementById("container")?.scrollBy(0,30);
+      document.getElementById("container")?.scrollBy(0,25);
+      if (this.counter > this.loopCounter){
+        return;
+      }
       }, 1000);
           
   }  

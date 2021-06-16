@@ -25,14 +25,21 @@
       }
       
       .description {
-        width: 60%;
+        width: 45%;
         float: left;
         padding: 15px;
         border: 1px ;
         height: 80px;
     
       }
-      .index {
+      .occurence {
+        width: 15%;
+        float: right;
+        padding: 15px;
+        border: 1px ;
+        height: 80px;
+      }
+      .duration {
         width: 15%;
         float: right;
         padding: 15px;

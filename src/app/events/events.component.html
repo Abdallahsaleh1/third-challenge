@@ -14,9 +14,14 @@
       <p>{{event.description}}</p>
       
     </div>
-    <div class="index" [ngStyle] = "{'background-color' : event.index === counter && show === true  ? '#606368' : 'white' }">
+    <div class="occurence" [ngStyle] = "{'background-color' : event.index === counter && show === true  ? '#606368' : 'white' }">
       
-      <p>{{event.time}} || {{event.duration}}</p>
+      <p>Occurence: {{event.time}}</p>
+      
+    </div>
+    <div class="duration" [ngStyle] = "{'background-color' : event.index === counter && show === true  ? '#606368' : 'white' }">
+      
+      <p>Duration time: {{event.duration}}</p>
       
     </div>
   </div>
