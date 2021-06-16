@@ -1,0 +1,54 @@
+#container{
+    height: 500px;
+    background-color: #91bbf3;
+    overflow-y: scroll;
+    
+    }
+    .card{
+        padding: 1rem;
+        margin-bottom: 1rem;
+    width: 95%;
+    margin-left: 40px;
+   
+    
+    }
+    
+      * {
+        box-sizing: border-box;
+      }
+      .logo {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px ;
+        height: 80px;
+      }
+      
+      .description {
+        width: 60%;
+        float: left;
+        padding: 15px;
+        border: 1px ;
+        height: 80px;
+    
+      }
+      .index {
+        width: 15%;
+        float: right;
+        padding: 15px;
+        border: 1px ;
+        height: 80px;
+      }
+      .button {
+        background-color: #555555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    

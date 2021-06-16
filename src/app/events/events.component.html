@@ -1,0 +1,29 @@
+<h2>Events</h2>
+
+<div id="container" >
+  <br>
+<div class="card" *ngFor = "let event of Events" >
+  <div class="contain" style=" background-color: rgb(255, 255, 255);">
+    <div class="logo"  [ngStyle] = "{'background-color' : event.index === counter && show === true  ? '#606368' : 'white' }">
+      <img *ngIf = "3 == event.type" src="assets/svg/click.svg" style="height: 40px;">
+      <img *ngIf = "4 == event.type" src="assets/svg/visit.svg" style="height: 40px;">
+    </div>
+    
+    <div class="description" [ngStyle] = "{'background-color' : event.index === counter && show === true  ? '#606368' : 'white' }">
+      
+      <p>{{event.description}}</p>
+      
+    </div>
+    <div class="index" [ngStyle] = "{'background-color' : event.index === counter && show === true  ? '#606368' : 'white' }">
+      
+      <p>{{event.time}} || {{event.duration}}</p>
+      
+    </div>
+  </div>
+  <span style="height: 1px;">&nbsp;</span>
+</div>
+
+</div>
+
+<br>
+<button  class="button button2" (click)="Play()" >Play</button> 
